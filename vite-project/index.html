@@ -1,0 +1,28 @@
+<head>
+
+<link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
+
+</head>
+
+<h1>Welcome to the HLS player on charliedesign.live!</h1>
+<h2>Below you will see a live stream that is broadcast from obs to AWS using MediaLive and MediaPackage</h2>
+<h2>The stream allows pausing and rewinding</h2>
+
+
+<video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    data-setup='{}'>
+  <source src="https://3fed4eda01633872.mediapackage.eu-west-2.amazonaws.com/out/v1/1068a68d2c524743afe6f1f9727039f4/index.m3u8" type="application/x-mpegURL"></source>
+
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
